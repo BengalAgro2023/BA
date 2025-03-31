@@ -1,3 +1,17 @@
+// Mobile Menu Toggle
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const mainNav = document.querySelector('.main-nav');
+
+mobileMenuBtn.addEventListener('click', () => {
+    mainNav.classList.toggle('active');
+    mobileMenuBtn.innerHTML = mainNav.classList.contains('active') 
+        ? '<i class="fas fa-times"></i>' 
+        : '<i class="fas fa-bars"></i>';
+});
+
+
+
+
 const contactForm = document.getElementById('contactForm');
 const confirmationMessage = document.getElementById('confirmationMessage');
 
