@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fresh Catch - Gallery</title>
+    <title>Bengal Agro - Gallery</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
@@ -185,7 +185,7 @@
 
         /* Page Header */
         .page-header {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('') no-repeat center center/cover;
             color: var(--white);
             padding: 5rem 0;
             text-align: center;
@@ -285,6 +285,73 @@
         .gallery-item:hover .gallery-caption {
             opacity: 1;
         }
+
+/* === Video Gallery Styles === */
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.video-card {
+    background-color: var(--white);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-info {
+    padding: 1.5rem;
+}
+
+.video-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--dark);
+}
+
+.video-info p {
+    color: var(--gray);
+    font-size: 0.9rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .video-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    .video-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+
 
         .gallery-caption h3 {
             margin-bottom: 0.5rem;
@@ -469,78 +536,107 @@
             <div class="gallery-grid">
                 <!-- Image 1 -->
                 <div class="gallery-item">
-                    <img src="" alt="Fish Farm">
+                    <img loading="lazy" src="" alt="Not available">
                     <div class="gallery-caption">
-                        <h3>Our Sustainable Farm</h3>
-                        <p>Environmentally friendly aquaculture practices</p>
+                        <h3>Not available</h3>
+                        <p>Not available</p>
                     </div>
                 </div>
 
                 <!-- Image 2 -->
                 <div class="gallery-item">
-                    <img src="" alt="Fishing Nets">
+                    <img loading="lazy" src="" alt="Not available">
                     <div class="gallery-caption">
-                        <h3>Harvesting Process</h3>
-                        <p>Gentle handling of our fish</p>
+                        <h3>Not available</h3>
+                        <p>Not available</p>
                     </div>
                 </div>
 
                 <!-- Image 3 -->
                 <div class="gallery-item">
-                    <img src="" alt="Salmon">
+                    <img loading="lazy" src="" alt="Not available">
                     <div class="gallery-caption">
-                        <h3>Premium Salmon</h3>
-                        <p>Fresh Atlantic salmon</p>
+                        <h3>Not available</h3>
+                        <p>Not available</p>
                     </div>
                 </div>
 
                 <!-- Image 4 -->
                 <div class="gallery-item">
-                    <img src="" alt="Shrimp">
+                    <img loading="lazy" src="" alt="Not available">
                     <div class="gallery-caption">
-                        <h3>Jumbo Shrimp</h3>
-                        <p>Wild-caught shrimp</p>
+                        <h3>Not available</h3>
+                        <p>Not available</p>
                     </div>
                 </div>
 
                 <!-- Image 5 -->
                 <div class="gallery-item">
-                    <img src="" alt="Oysters">
+                    <img loading="lazy" src="" alt="Not available">
                     <div class="gallery-caption">
-                        <h3>Fresh Oysters</h3>
-                        <p>Premium quality oysters</p>
+                        <h3>Not available</h3>
+                        <p>Not available</p>
                     </div>
                 </div>
 
                 <!-- Image 6 -->
                 <div class="gallery-item">
-                    <img src="" alt="Fish Packaging">
+                    <img loading="lazy" src="" alt="Not available">
                     <div class="gallery-caption">
-                        <h3>Quality Packaging</h3>
-                        <p>Eco-friendly packaging materials</p>
+                        <h3>Not available</h3>
+                        <p>Not available</p>
                     </div>
                 </div>
 
                 <!-- Image 7 -->
                 <div class="gallery-item">
-                    <img src="" alt="Fish Market">
+                    <img loading="lazy" src="" alt="Not available">
                     <div class="gallery-caption">
-                        <h3>Farmers Market</h3>
-                        <p>Our stall at the local market</p>
+                        <h3>Not available</h3>
+                        <p>Not available</p>
                     </div>
                 </div>
 
                 <!-- Image 8 -->
                 <div class="gallery-item">
-                    <img src="" alt="Cooking Fish">
+                    <img loading="lazy" src="" alt="Not available">
                     <div class="gallery-caption">
-                        <h3>Recipe Ideas</h3>
-                        <p>Delicious ways to prepare our fish</p>
+                        <h3>Not available</h3>
+                        <p>Not available</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+      <!--Video 1-->
+        <section class="video-gallery">
+            <div class="video-card">
+                <div class="video-container">
+                    <video loading="lazy" src="WhatsApp Video 2025-03-31 at 13.01.40_c9d50e01.mp4" controls
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></video>
+                </div>
+                <div class="video-info">
+                    <h3>Way We Feed</h3>
+                    <p>This is how we feed our fishs</p>
+                </div>
+            </div>
+        <!--Video 2-->
+            <div class="video-card">
+                <div class="video-container">
+                    <video loading="lazy" src="WhatsApp Video 2025-03-31 at 13.01.19_ad7736cb.mp4" controls 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></video>
+                </div>
+                <div class="video-info">
+                    <h3>Way we take care</h3>
+                    <p>Our fishs are protected through CCTV 27/7</p>
+                </div>
+            </div>
+            
+            <!-- Add more video cards as needed -->
+        </section>
 
     <!-- Footer -->
     <footer class="main-footer">
